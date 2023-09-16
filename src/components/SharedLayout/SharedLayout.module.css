@@ -1,0 +1,103 @@
+.header {
+  height: 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 80%;
+  margin: 0 auto;
+}
+
+.headerNavLinkWrap {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}
+
+.headerNavLink,
+.headerNavLinkActive {
+  color: #fff;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.headerNavLinkActive {
+  position: relative;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.headerNavLinkActive::after {
+  position: absolute;
+  bottom: -8px;
+  left: 0;
+
+  content: '';
+
+  display: block;
+  width: 30px;
+  height: 2px;
+
+  background-color: #fff;
+  border-radius: 2px;
+}
+
+.logoutBtn {
+  color: #fff;
+  font-size: 14px;
+  font-weight: 600;
+  display: block;
+  padding: 10px 20px;
+  border: 1px solid #fff;
+  background-color: transparent;
+  border-radius: 8px;
+}
+@media (max-width: 480px) {
+  .headerNavLinkWrap {
+    gap: 14px;
+  }
+  .logoutBtn {
+    font-size: 14px;
+    padding: 8px;
+  }
+  .headerNavLink,
+  .headerNavLinkActive {
+    font-size: 14px;
+  }
+}
+
+@media (min-width: 768px) {
+  .header {
+    height: 100px;
+    width: 80%;
+  }
+  .headerNavLinkWrap {
+    gap: 50px;
+  }
+  .logoutBtn {
+    font-size: 18px;
+  }
+  .headerNavLink,
+  .headerNavLinkActive {
+    font-size: 18px;
+  }
+  .headerNavLinkActive::after {
+    width: 40px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .header {
+    height: 140px;
+    width: 70%;
+  }
+  .logoutBtn {
+    font-size: 20px;
+  }
+  .headerNavLink,
+  .headerNavLinkActive {
+    font-size: 22px;
+  }
+  .headerNavLinkActive::after {
+    width: 44px;
+    bottom: -10px;
+  }
+}

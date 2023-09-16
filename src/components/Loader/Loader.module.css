@@ -1,0 +1,30 @@
+.loader {
+  border-radius: 50%;
+  display: block;
+  margin: 0 auto;
+  border-right: 3px solid transparent;
+  box-sizing: border-box;
+  animation: rotation 1s linear infinite;
+}
+
+.loader.primary {
+  margin: 100px auto 0;
+  width: 60px;
+  height: 60px;
+  border-top: 3px solid #fff;
+}
+
+.loader.secondary {
+  width: 48px;
+  height: 48px;
+  border-top: 3px solid rgba(72, 61, 139, 0.7);
+}
+
+@keyframes rotation {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
