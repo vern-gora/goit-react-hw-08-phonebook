@@ -32,7 +32,7 @@
 .homeBtn {
   min-width: 90px;
 
-  background: rgb(72, 61, 139);
+  background: linear-gradient(to right, #6570e3, #483d8b);
   text-align: center;
   color: #fff;
   border-radius: 8px;
