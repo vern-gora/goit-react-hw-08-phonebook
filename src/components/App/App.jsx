@@ -4,6 +4,7 @@ import { useDispatch, useSelector } from 'react-redux';
 import { RestrictedRoute } from '../RestrictedRoute';
 import { PrivateRoute } from '../PrivateRoute';
 import { refreshUser } from 'redux/auth/authOperations';
+import { fetchContacts } from 'redux/contacts/contactsOperations';
 import { getIsRefreshing } from 'redux/selectors';
 import Loader from 'components/Loader/Loader';
 
@@ -22,6 +23,7 @@ const App = () => {
 
   useEffect(() => {
     dispatch(refreshUser());
+    dispatch(fetchContacts());
   }, [dispatch]);
 
   return (

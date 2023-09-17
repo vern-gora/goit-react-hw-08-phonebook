@@ -79,5 +79,5 @@ const ContactForm = () => {
     </form>
   );
 };
-// background: linear-gradient(to right, #b5b7ca, #483d8b);
+
 export default ContactForm;
